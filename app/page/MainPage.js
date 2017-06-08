@@ -62,7 +62,7 @@ export default class Index extends Component {
 			    renderIcon={() => <Image source={require('../image/message_gray.png')} style={styles.tab} />}
 			    renderSelectedIcon={() => <Image source={require('../image/message_blue.png')} style={styles.tab} />}
 			    onPress={() => this.setState({ selectedTab: 'message' })}>
-			    {<HomeFragment {...this.props} />}
+			    {<NotifyFragment {...this.props} />}
 			  </TabNavigator.Item> 
 			  <TabNavigator.Item
 			    selected={this.state.selectedTab === 'main'}
@@ -70,7 +70,7 @@ export default class Index extends Component {
 			    renderIcon={() => <Image source={require('../image/main_gray.png')} style={styles.tab} />}
 			    renderSelectedIcon={() => <Image source={require('../image/main_blue.png')} style={styles.tab} />}
 			    onPress={() => this.setState({ selectedTab: 'main' })}>
-			    {<CompassFragment {...this.props} />}
+			    {<MeFragment {...this.props} />}
 			  </TabNavigator.Item>
 			</TabNavigator>
 		)

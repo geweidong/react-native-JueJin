@@ -26,3 +26,5 @@ export default class Index extends Component {
 }
 
 
+
+// 如果初始化的时候白屏，试着删除模拟器缓存，然后重新build

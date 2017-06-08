@@ -47,10 +47,11 @@ export default class HomeFragment extends Component {
 			        {
 			        	this.state.tabNames.map((item,index) => {
 			        		return (
-			        			<HomeTab {...this.props} tabLabel={item} key={index}/>
+			        			<HomeTab {...this.props} key={index} tabLabel={item} key={index}/>
 			        		)
 			        	})
 			        }
+			        
 			     </ScrollableTabView>
 			</View>
 		)

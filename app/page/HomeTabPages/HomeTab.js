@@ -12,6 +12,8 @@ import {
 import computeTime from '../../util/computeTime';
 import theme from '../../config/theme';
 import HotPanel from '../../components/HotPanel';
+import ListViewForHome from '../../components/ListViewForHome';
+import ListViewOtherTab from '../../components/ListViewOtherTab';
 
 export default class HomeTab extends Component{
 	constructor(props){
@@ -114,6 +116,11 @@ export default class HomeTab extends Component{
 			return (
 				<View>
 					<HotPanel {...this.props} title={tabName} contents={this.state.dataBlob}/>
+					{
+						tabName === '热门推荐'?
+						<ListViewForHome {...this.props} contents={this.state.dataBlob}/>:
+						<ListViewOtherTab {...this.props} contents={this.state.dataBlob}/>
+					}
 				</View>
 			)
 		}

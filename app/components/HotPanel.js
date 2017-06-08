@@ -118,7 +118,6 @@ export default class HotPanel extends Component {
 
 	// 渲染热门模块内的每块内容
 	_renderContent(item){
-		console.log(item.screenshot)
 		return (
 			<View style={styles.listItem}>
 				<View style={{flex:80,marginTop:px2dp(10)}}>
@@ -148,7 +147,7 @@ export default class HotPanel extends Component {
 
 	// 点击热门模块
 	_hotPanelCallback(item){
-
+		alert(item)
 	}
 }
 
