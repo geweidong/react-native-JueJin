@@ -1,5 +1,5 @@
 # react-native-JueJin
-仿照掘金app
+仿照掘金app       
 
 这是仿照网上的掘金项目写的一个雏形，Android版的
 
